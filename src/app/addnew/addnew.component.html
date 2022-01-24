@@ -1,0 +1,236 @@
+<style>
+
+    label{
+        color: rgb(51, 0, 255);
+        font-weight: bold;
+    }
+    .border{
+      border-radius: 9px;
+    }
+</style>
+
+<div class="container col-sm-12 col-lg-6 border border-dark m-auto" >
+
+    <form style="padding:20px;  "[formGroup]="userForm" >
+     
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label >Enrollment </label>
+            <input type="text" class="form-control"formControlName="enroll"   placeholder="Enrollment No.">
+          </div>
+          <div class="form-group col-md-2">
+            <label >Name</label>
+            <input type="text" class="form-control" formControlName="name" placeholder="Name">
+          </div>
+          <div class="form-group col-md-4">
+            <label >D.O.B</label>
+            <input type="date" formControlName="dob" class="form-control" >
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputState">Semester</label>
+            <select formControlName="semester" class="custom-select" id="inputGroupSelect01">
+                <option value="">Choose</option>
+                <option value="First">First</option>
+                <option value="Second">Second</option>
+                <option value="Third">Third</option>
+                <option value="Fourth">Fourth</option>
+                <option value="Fifth">Fifth</option>
+                <option value="Sixth">Sixth</option>
+                <option value="Seventh">Seventh</option>
+                <option value="Eighth">Eighth</option>
+              </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputState"> Branch</label>
+            <select formControlName="branch"  class="custom-select" id="inputGroupSelect01">
+              <option value="">Choose</option>
+              <option value="CSE">CSE</option>
+                <option value="ITE">ITE</option>
+                <option value="ECE">ECE</option>
+                <option value="ELE">ELE</option>
+                <option value="MEC">MEC</option>
+                <option value="CIV">CIV</option>
+                <option value="CHEM">CHEM</option>
+                <option value="MME">MME</option>
+              </select>
+          </div>
+         </div>
+         <div class="form-row">
+            <div class="form-group col-md-6">
+              <label >  Course Name </label>
+              <select formControlName="cn1" class="custom-select" id="inputGroupSelect01">
+                <option value="">Choose</option>
+                <option value="Engineering Drawing">Engineering Drawing</option>
+                <option value="Engineering Chemistry"> Engineering Chemistry</option>
+                <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                <option value="Basic Electrical Engineering Laboratory">Basic Electrical Engineering Laboratory</option>
+                <option value="Advanced English Comm. Skills & Organizational Behavior">Advanced English Comm. Skills & Organizational Behavior</option>
+                <option value="Computer Programming">Computer Programming</option>
+                <option value="Computer Programming Laboratory">Computer Programming Laboratory</option>
+                <option value="Mathematics II">Mathematics II</option>
+              </select>           
+            </div>
+           
+              <div class="form-group col-md-6">
+                <label >Marks Obtained <small>(out of 100) </small> </label>
+                <input type="text" formControlName="m1" class="form-control"  placeholder="Marks ">
+              </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select formControlName="cn2" class="custom-select" id="inputGroupSelect01">
+                  <option value="">Choose</option>
+                    <option value="Engineering Drawing">Engineering Drawing</option>
+                    <option value="Engineering Chemistry"> Engineering Chemistry</option>
+                    <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                    <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                    <option value="Basic Electrical Engineering Laboratory">Basic Electrical Engineering Laboratory</option>
+                    <option value="Advanced English Comm. Skills & Organizational Behavior">Advanced English Comm. Skills & Organizational Behavior</option>
+                    <option value="Computer Programming">Computer Programming</option>
+                    <option value="Computer Programming Laboratory">Computer Programming Laboratory</option>
+                    <option value="Mathematics II">Mathematics II</option>
+                  </select>               
+            </div>
+              <div class="form-group col-md-6">
+                <input type="text" formControlName="m2" class="form-control"  placeholder="Marks ">
+              </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select formControlName="cn3" class="custom-select" id="inputGroupSelect01">
+                  <option value="">Choose</option>
+                    <option value="Engineering Drawing">Engineering Drawing</option>
+                    <option value="Engineering Chemistry"> Engineering Chemistry</option>
+                    <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                    <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                    <option value="Basic Electrical Engineering Laboratory">Basic Electrical Engineering Laboratory</option>
+                    <option value="Advanced English Comm. Skills & Organizational Behavior">Advanced English Comm. Skills & Organizational Behavior</option>
+                    <option value="Computer Programming">Computer Programming</option>
+                    <option value="Computer Programming Laboratory">Computer Programming Laboratory</option>
+                    <option value="Mathematics II">Mathematics II</option>
+                  </select>               
+            </div>
+              <div class="form-group col-md-6">
+                <input type="text" formControlName="m3" class="form-control"  placeholder="Marks ">
+              </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select formControlName="cn4" class="custom-select" id="inputGroupSelect01">
+                  <option value="">Choose</option>
+                    <option value="Engineering Drawing">Engineering Drawing</option>
+                    <option value="Engineering Chemistry"> Engineering Chemistry</option>
+                    <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                    <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                    <option value="Basic Electrical Engineering Laboratory">Basic Electrical Engineering Laboratory</option>
+                    <option value="Advanced English Comm. Skills & Organizational Behavior">Advanced English Comm. Skills & Organizational Behavior</option>
+                    <option value="Computer Programming">Computer Programming</option>
+                    <option value="Computer Programming Laboratory">Computer Programming Laboratory</option>
+                    <option value="Mathematics II">Mathematics II</option>
+                  </select>               
+            </div>
+              <div class="form-group col-md-6">
+                <input type="text" formControlName="m4" class="form-control"  placeholder="Marks ">
+              </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select formControlName="cn5" class="custom-select" id="inputGroupSelect01">
+                  <option value="">Choose</option>
+                    <option value="Engineering Drawing">Engineering Drawing</option>
+                    <option value="Engineering Chemistry"> Engineering Chemistry</option>
+                    <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                    <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                    <option value="Basic Electrical Engineering Laboratory">Basic Electrical Engineering Laboratory</option>
+                    <option value="Advanced English Comm. Skills & Organizational Behavior">Advanced English Comm. Skills & Organizational Behavior</option>
+                    <option value="Computer Programming">Computer Programming</option>
+                    <option value="Computer Programming Laboratory">Computer Programming Laboratory</option>
+                    <option value="Mathematics II">Mathematics II</option>
+                  </select>               
+            </div>
+              <div class="form-group col-md-6">
+                <input type="text" formControlName="m5" class="form-control"  placeholder="Marks ">
+              </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select formControlName="cn6" class="custom-select" id="inputGroupSelect01">
+                  <option value="">Choose</option>
+                    <option value="Engineering Drawing">Engineering Drawing</option>
+                    <option value="Engineering Chemistry"> Engineering Chemistry</option>
+                    <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                    <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                    <option value="Basic Electrical Engineering Laboratory">Basic Electrical Engineering Laboratory</option>
+                    <option value="Advanced English Comm. Skills & Organizational Behavior">Advanced English Comm. Skills & Organizational Behavior</option>
+                    <option value="Computer Programming">Computer Programming</option>
+                    <option value="Computer Programming Laboratory">Computer Programming Laboratory</option>
+                    <option value="Mathematics II">Mathematics II</option>
+                  </select>               
+            </div>
+              <div class="form-group col-md-6">
+                <input type="text" formControlName="m6" class="form-control"  placeholder="Marks ">
+              </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select formControlName="cn7" class="custom-select" id="inputGroupSelect01">
+                  <option value="">Choose</option>
+                    <option value="Engineering Drawing">Engineering Drawing</option>
+                    <option value="Engineering Chemistry"> Engineering Chemistry</option>
+                    <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                    <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                    <option value="Basic Electrical Engineering Laboratory">Basic Electrical Engineering Laboratory</option>
+                    <option value="Advanced English Comm. Skills & Organizational Behavior">Advanced English Comm. Skills & Organizational Behavior</option>
+                    <option value="Computer Programming">Computer Programming</option>
+                    <option value="Computer Programming Laboratory">Computer Programming Laboratory</option>
+                    <option value="Mathematics II">Mathematics II</option>
+                  </select>               
+            </div>
+              <div class="form-group col-md-6">
+                <input type="text"formControlName="m7" class="form-control"  placeholder="Marks ">
+              </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select formControlName="cn8" class="custom-select" id="inputGroupSelect01">
+                  <option value="">Choose</option>
+                    <option value="Engineering Drawing">Engineering Drawing</option>
+                    <option value="Engineering Chemistry"> Engineering Chemistry</option>
+                    <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                    <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                    <option value="Basic Electrical Engineering Laboratory">Basic Electrical Engineering Laboratory</option>
+                    <option value="Advanced English Comm. Skills & Organizational Behavior">Advanced English Comm. Skills & Organizational Behavior</option>
+                    <option value="Computer Programming">Computer Programming</option>
+                    <option value="Computer Programming Laboratory">Computer Programming Laboratory</option>
+                    <option value="Mathematics II">Mathematics II</option>
+                  </select>               
+            </div>
+              <div class="form-group col-md-6">
+                <input type="text" formControlName="m8" class="form-control"  placeholder="Marks ">
+              </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <select formControlName="cn9" class="custom-select" id="inputGroupSelect01">
+                  <option value="">Choose</option>
+                    <option value="Engineering Drawing">Engineering Drawing</option>
+                    <option value="Engineering Chemistry"> Engineering Chemistry</option>
+                    <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                    <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                    <option value="Basic Electrical Engineering Laboratory">Basic Electrical Engineering Laboratory</option>
+                    <option value="Advanced English Comm. Skills & Organizational Behavior">Advanced English Comm. Skills & Organizational Behavior</option>
+                    <option value="Computer Programming">Computer Programming</option>
+                    <option value="Computer Programming Laboratory">Computer Programming Laboratory</option>
+                    <option value="Mathematics II">Mathematics II</option>
+                  </select>               
+            </div>
+              <div class="form-group col-md-6">
+                <input type="text"formControlName="m9" class="form-control"  placeholder="Marks ">
+              </div>
+        </div>
+        <button type="submit" *ngIf="!getParamenroll" class="btn btn-info "  (click)="userSubmit()" >Submit</button>&nbsp;
+        <button type="submit" *ngIf="getParamenroll" class="btn btn-success " [routerLink]="['/app-showall']"  (click)="userUpdate()" >Update</button>
+      </form>
+
+</div>

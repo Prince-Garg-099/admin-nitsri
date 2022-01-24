@@ -1,0 +1,33 @@
+<style>
+th,td{
+  text-align: center;
+}
+
+</style>
+
+
+
+<table class="table table-bordered border-dark table-sm  col-6 m-auto">
+    <thead>
+      <tr>
+        <th scope="col">Enrollment</th>
+        <th scope="col">Name</th>
+        <th scope="col">D.O.B</th>
+        <th scope="col">Semester</th>
+        <th scope="col">Branch</th>
+        <th scope="col">Manage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = 'let us of readData' >
+        <th scope="row">{{us.enrollment}}</th>
+        <td>{{us.name}}</td>
+        <td>{{us.dob}}</td>
+        <td>{{us.semester}}</td>
+        <td>{{us.branch}}</td>
+        <td><button class="btn btn-success btn-sm" [routerLink]="['/app-addnew',us.enrollment,us.semester]"  >Update</button>&nbsp;
+          <button (click)="deleteId(us.enrollment,us.semester)" class="btn btn-danger btn-sm"  >Delete</button></td>
+      </tr>
+      
+    </tbody>
+  </table>
